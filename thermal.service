@@ -1,0 +1,9 @@
+[Unit]
+Description=Thermal Control for Raspberry Pi
+
+[Service]
+Type=simple
+ExecStart=/opt/thermal-control -p 14 -t 70
+
+[Install]
+WantedBy=multi-user.target
